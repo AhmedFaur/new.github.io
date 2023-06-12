@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'JF Flat Regular';
+    src: url(../Fonts/JF\ Flat\ Regular.ttf);
+    font-family: 'arial';
+    src: url(../Fonts/alfont_com_arial-1.ttf);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: "jf flat" ;
+    background-color: black;
+    color: white;
+    background: url(../Image/background.jpg) no-repeat;
+    background-size: cover;
+}
+.logo {
+  margin: 0;
+  margin-right: 15px;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.image-0 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+    .image-0 {
+      flex-direction: column;
+    }
+  }
+@media (max-width: 768px){
+  .h-1 {
+    font-size: 45px !important;
+  }
+  .p-1 {
+    font-size: 25px !important;
+  }
+}
+
+.land p {
+  text-align: center;
+  line-height: 1.9;
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+.land h2 {
+  margin: 0;
+  font-size: 68px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+@media (max-width: 992px) {
+  .land h2 {
+    font-size: 62px;
+  }
+  .land p {
+    font-size: 33px;
+  }
+}
+@media (max-width: 920px){
+  .land h2 {
+    font-size: 47px;
+  }
+  .land p {
+    font-size: 29px;
+  }
+  .logo {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 375px) {
+  .land h2 {
+    font-size: 30px !important;
+    padding-top: 10px;
+  }
+  .land p {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 415px) {
+  .land h2 {
+    font-size: 30px !important;
+    padding-top: 10px;
+  }
+  .land p {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 280px) {
+  .land h2 {
+    font-size: 20px !important;
+  }
+  .land p {
+    font-size: 12px !important;
+  }
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  perspective: 600px;
+}
+.parent a {
+  padding: 10px;
+  background-color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+  width: calc(25% - 10px);
+  transform-style: preserve-3d;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+  text-decoration: unset;
+  font-family: "jf flat";
+}
+.parent a:hover {
+  background-color: white;
+  color: #020202;
+  transform: translateZ(7px);
+}
+@media (max-width: 768px) {
+  .parent a {
+    width: calc(50% - 10px);
+  }
+}
+/* Start Portfolio */
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 80px;
+}
+.portfolio .portfolio-content .card {
+  background-color: black;
+}
+.portfolio .portfolio-content .card:hover {
+  border: 1px solid #2a2a2a;
+  transition: 0.2s;
+}
+.portfolio .portfolio-content .card img {
+  max-width: 100%;
+}
+.portfolio .portfolio-content .card .info {
+  padding: 20px;
+}
+.portfolio .portfolio-content .card .info h3 {
+  margin: 0;
+}
+.portfolio .portfolio-content .card .info p {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+/* End Portfolio */
+/* Start Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.footer span {
+  font-weight: bold;
+}
+/* End Footer */
+/* Social Media Start */
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.social i {
+  margin-left: 10px;
+  /* color: #3d3d3e; */
+  color: white;
+  font-size: 20px;
+}
+.fa-youtube {
+  margin-right: 5px;
+}
+.social i:hover {
+  /* color: white; */
+  color: #3d3d3e;
+  transition: 0.5s;
+}
+/* Social Media End */
